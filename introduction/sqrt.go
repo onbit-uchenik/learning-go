@@ -1,7 +1,7 @@
 /*
 	Author - Anubhav Vats
 	Description - Calculate the sqrt of any positive number.
-	Last Modified - 17/04/21
+	Last Modified - 21/04/21
 */
 package main
 
@@ -13,7 +13,7 @@ import (
 )
 
 func Sqrt(x float64) (error, float64) {
-	fmt.Println("checking the type of x", reflect.TypeOf(x))
+	fmt.Println("checking the type of x", reflect.TypeOf(x)) // prints float64
 	if x < 0 {
 		return errors.New("expected input to Sqrt to be positive number, found negative number"), 0
 	}
@@ -32,6 +32,7 @@ func main() {
 	// There is no implicit type conversion in go lang
 	// still how sending 45 a int value to float64 didnt throw any
 	// error?
+	fmt.Println("Checking type of the constant", reflect.TypeOf(45)) // prints int
 	err, sqNumber := Sqrt(45)
 	if err == nil {
 		fmt.Println("Square root of 45 is ", sqNumber)
