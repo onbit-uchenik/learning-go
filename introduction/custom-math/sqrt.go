@@ -3,7 +3,7 @@
 	Description - Calculate the sqrt of any positive number.
 	Last Modified - 21/04/21
 */
-package custom_math
+package custom-math
 
 import (
 	"errors"
