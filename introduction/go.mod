@@ -2,4 +2,7 @@ module github.com/onbit-syn/learning-go/tree/main/introduction
 
 go 1.16
 
-require rsc.io/quote v1.5.2 // indirect
+require (
+	golang.org/x/tour v0.0.0-20210329144203-e4a37d30d6fc // indirect
+	rsc.io/quote v1.5.2 // indirect
+)
